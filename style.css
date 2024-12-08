@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+}
+
+.logo {
+    height: 75px; /* Ajuste la taille du logo */
+    width: auto; /* Permet d'ajuster automatiquement la largeur selon la hauteur */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+nav div {
+    display: flex;
+    align-items: center; /* Centre verticalement le logo */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #00792e; /* Couleur au survol */
+}
+
+.background-image {
+    background-image: url('back.png'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+main{
+    color: white;
+}
+
+.background-image h1 {
+    font-size: 3em; /* Taille du texte */
+}
+
+.background-image p {
+    font-size: 1.2em; /* Taille de la description */
+}
+
+.search-bar {
+    margin-top: 20px; /* Espace au-dessus de la barre de recherche */
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 1em;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+}
+
+footer {
+    background-color: #000000; /* Couleur du footer */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: 100px; /* ou une autre valeur */
+    padding: 20px;
+}
+
+.social-links a {
+   color: white; /* Couleur des liens sociaux */
+   text-decoration: none; 
+   margin-left: 10px; 
+    flex-wrap: wrap; /* Permet aux liens de s'enrouler sur plusieurs lignes si nécessaire */
+} 
+/* Responsive pour les petits écrans */
+@media (max-width: 600px) {
+    .social-links a {
+        margin-left: 5px; /* Réduit l'espace sur les petits écrans */
+        font-size: 14px; /* Réduit la taille de la police */
+    }
+
+    body {
+        background-size: cover; /* Assure que l'image d'arrière-plan couvre tout l'écran */
+        background-position: center; /* Centre l'image d'arrière-plan */
+    }
+}
+
+/* Responsive pour les écrans moyens */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .social-links a {
+        margin-left: 10px; /* Espace normal pour les écrans moyens */
+        font-size: 16px; /* Taille de police normale */
+    }
+}
+
+/* Responsive pour les grands écrans */
+@media (min-width: 1025px) {
+    .social-links a {
+        margin-left: 15px; /* Espace plus grand pour les écrans larges */
+        font-size: 18px; /* Taille de police plus grande */
+    }
+}
